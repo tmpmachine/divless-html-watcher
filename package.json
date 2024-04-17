@@ -1,0 +1,18 @@
+{
+  "name": "divless-html-watcher",
+  "description": "A file watcher to convert Divless HTML format to HTML",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "divless": "./bin/divless"
+  },
+  "scripts": {
+    "start": "node watcher.js"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "author": "tmpmachine",
+  "dependencies": {
+    "chokidar": "3.6.0"
+  }
+}

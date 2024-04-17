@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+const { spawn } = require('child_process');
+
+const watcher = spawn('node', [`${__dirname}/../watcher.js`], { stdio: 'inherit' });
+
+watcher.on('exit', (code, signal) => {
+  process.exit(code);
+});
