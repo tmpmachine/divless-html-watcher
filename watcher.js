@@ -3,9 +3,10 @@ const chokidar = require('chokidar');
 const path = require('path');
 const fs = require('fs');
 
+let pathToWatch = '**/.divless/**/*';
 
 // Initialize watcher
-const watcher = chokidar.watch('**/.divless/**/*', {
+const watcher = chokidar.watch(pathToWatch, {
   ignored: /(^|[\/\\])\.(?!divless($|[\/\\]))/, // Ignore dotfiles except .divless
   depth: 99, // limits how many levels of subdirectories will be traversed.
   cwd: process.cwd(), // Set the current working directory for the watcher
@@ -34,4 +35,4 @@ watcher
     });
   })
 
-console.log(`Watching ${folderToWatch} for changes...`);
+console.log(`Watching ${pathToWatch} for changes...`);
