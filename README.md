@@ -16,7 +16,7 @@ package.json
 
 Run `npm install`, then run `npm run watch` in your project root.
 
-Usage example:
+## Usage Example
 1. Create **.divless** folder anywhere in your project directory.
 2. Create **index.html** inside the **.divless** folder.
 3. Type in `[btn 'This is a button']`, then save.
@@ -24,4 +24,4 @@ Usage example:
 
 Try other [Divless HTML format](https://github.com/tmpmachine/divless-html).
 
-Don't ignore **.divless** folder as it is a one way converter.
+Don't ignore **.divless** folder as this is a one way converter.
