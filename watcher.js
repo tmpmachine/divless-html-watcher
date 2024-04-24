@@ -1,17 +1,14 @@
-// watcher.js
-const { divless } = require('./divless.js'); // Import your library
+const { divless } = require('./divless.js');
 const chokidar = require('chokidar');
 const path = require('path');
 const fs = require('fs');
 
-console.log(divless)
-
-const folderToWatch = path.join(process.cwd(), '.divless'); // Path to the folder you want to watch
 
 // Initialize watcher
-const watcher = chokidar.watch(folderToWatch, {
+const watcher = chokidar.watch('**/.divless/**/*', {
   ignored: /(^|[\/\\])\.(?!divless($|[\/\\]))/, // Ignore dotfiles except .divless
-  persistent: true,
+  depth: 99, // limits how many levels of subdirectories will be traversed.
+  cwd: process.cwd(), // Set the current working directory for the watcher
 });
 
 // Add event listeners
