@@ -1,8 +1,7 @@
-const { divless } = require('./divless.js');
+const { divless } = require('@tmp7/divless-html');
 const chokidar = require('chokidar');
 const path = require('path');
 const fs = require('fs');
-
 let pathToWatch = '**/.divless/**/*';
 
 // Initialize watcher

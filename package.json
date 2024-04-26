@@ -13,9 +13,9 @@
   "license": "MIT",
   "author": "tmp7",
   "dependencies": {
+    "@tmp7/divless-html": "^1.0.0",
     "chokidar": "3.6.0"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tmpmachine/divless-html-watcher.git"
